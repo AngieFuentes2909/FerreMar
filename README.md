@@ -45,7 +45,6 @@ El sistema incluye usuarios pre-creados en la base de datos listos para probar t
 | Rol | Usuario (`username`) | Contraseña (`password`) | Descripción del Perfil |
 | :--- | :--- | :--- | :--- |
 | **Administrador** | `Administrador1` | `123456` | Perfil administrador principal con acceso total. |
-| **Administrador Base** | `Administrador` | `123456` | Cuenta de administración por defecto. |
 | **Vendedor / Cajero** | `will1` | `123456` | Asignado a Wilder Betancourt en la Caja de Ventas 1. |
 | **Bodeguero** | `Martad` | `123456` | Asignado a Marta Domínguez en el control de stock de bodega. |
 
