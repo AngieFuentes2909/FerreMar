@@ -110,4 +110,15 @@ El código sigue una arquitectura **Modelo-Vista-Controlador (MVC)** ordenada y 
         *   📁 `css/` & `js/`: Contiene el framework de estilos **Bulma CSS** optimizado y los scripts personalizados para los buscadores dinámicos y el comportamiento del carrito de compras.
 
 ---
+
+## 👥 Integrantes del Proyecto
+
+El desarrollo y optimización del sistema **FerreMar** fue realizado con pasión por el siguiente equipo de trabajo:
+
+*   👩‍💻 **Angie Fuentes**
+*   👩‍💻 **Daniela Heredia**
+*   👨‍💻 **Daniel Estrada**
+*   👨‍💻 **Wildherman Betancourt**
+
+---
 **FerreMar** 🛠️ — *Rapidez, elegancia y precisión para potenciar la gestión de tu ferretería al máximo nivel.*
