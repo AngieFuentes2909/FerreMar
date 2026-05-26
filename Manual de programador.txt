@@ -1,0 +1,117 @@
+Manual de Programador - Sistema de 
+Inventario para Ferretería 
+1. Introducción y Propósito 
+Este manual está dirigido a los desarrolladores del sistema de inventario para ferretería. Su 
+objetivo es detallar la arquitectura, convenciones de codificación, procesos de despliegue, 
+pruebas y mantenimiento para facilitar la incorporación de nuevos programadores y 
+asegurar la calidad y consistencia del código. 
+2. Entorno de Desarrollo 
+Requisitos de Software y Herramientas: - PHP 7.4 o superior - Servidor web Apache o Nginx con módulo PHP - Base de datos MySQL o MariaDB - Editor/IDE: Visual Studio Code, PHPStorm u otro de preferencia - Opcional: Composer para gestión de dependencias, phpDocumentor para documentación 
+2.1 Instalación y Configuración 
+1. Clonar el repositorio del proyecto. 
+2. Copiar config.sample.php a config.php y ajustar credenciales de la base de datos. 
+3. Ejecutar composer install si se utilizan dependencias de Composer. 
+4. Importar el archivo ventas.sql en la base de datos mediante phpMyAdmin o línea de 
+comandos. 
+3. Arquitectura y Estructura del Código 
+El sistema utiliza el patrón Modelo–Vista–Controlador (MVC) para separar 
+responsabilidades: - Modelos: Clases que representan tablas de la base de datos y manejan el acceso a datos. - Vistas:Plantillas HTML/PHP que presentan la información al usuario. - Controladores:** Orquestan la lógica de negocio, reciben peticiones y coordinan modelos y 
+vistas. 
+3.1 Estructura de Carpetas 
+ 
+/app 
+/Controllers   ← Controladores de cada módulo 
+/Models        
+← Clases de acceso a datos 
+/Views        
+/public 
+/css, /js      
+/config        
+ 
+ ← Plantillas de presentación 
+← Recursos estáticos 
+ ← Archivos de configuración global 
+4. Estándares y Convenciones de Codificación - Seguir PSR-12 para estructura y estilo de código PHP. - Uso de DocBlocks (phpDocumentor) para documentar clases, métodos y funciones. - Nomenclatura: Clases en PascalCase, métodos y variables en camelCase. - Manejo de errores con excepciones (try/catch) y registro en logs. 
+5. Documentación de API Interna 
+Se recomienda generar la documentación con phpDocumentor. Para cada endpoint interno, 
+incluir: - URL y método HTTP - Parámetros de entrada y validaciones - Formato de respuesta (JSON) - Códigos de estado HTTP y sus significados 
+6. Esquema de Base de Datos y Modelos 
+6.1 Diagrama Entidad–Relación 
+Incluir diagrama gráfico de entidades y relaciones (se puede insertar como imagen). 
+6.2 Modelos PHP 
+Tabla 
+caja 
+categoria 
+Modelo PHP 
+Caja.php 
+Categoria.php 
+Campos clave 
+caja_id, caja_numero, 
+caja_nombre, caja_efectivo 
+categoria_id, 
+categoria_nombre, 
+categoria_ubicacion 
+cliente 
+empresa 
+producto 
+usuario 
+venta 
+venta_detalle 
+Cliente.php 
+Empresa.php 
+Producto.php 
+Usuario.php 
+Venta.php 
+VentaDetalle.php 
+cliente_id, 
+cliente_tipo_documento, 
+cliente_numero_documento, 
+cliente_nombre, 
+cliente_apellido, 
+cliente_provincia, 
+cliente_ciudad, 
+cliente_direccion, 
+cliente_telefono, 
+cliente_email 
+empresa_id, 
+empresa_nombre, 
+empresa_telefono, 
+empresa_email, 
+empresa_direccion, 
+empresa_logo 
+producto_id, 
+producto_codigo, 
+producto_nombre, 
+producto_stock, 
+producto_precio_compra, 
+producto_precio_venta, 
+categoria_id 
+usuario_id, usuario_nombre, 
+usuario_contrasena, 
+usuario_tipo 
+venta_id, venta_codigo, 
+venta_fecha, venta_hora, 
+venta_total, venta_pagado, 
+venta_cambio, usuario_id, 
+cliente_id, caja_id 
+venta_detalle_id, 
+venta_detalle_cantidad, 
+venta_detalle_precio_compra, 
+venta_detalle_precio_venta, 
+venta_detalle_total, 
+venta_detalle_descripcion, 
+venta_codigo, producto_id 
+6.3 Clases de Controlador 
+En /app/Controllers/ se definen los controladores que utilizan los modelos anteriores. 
+Ejemplo: VentaController.php con métodos nuevaVentaAction() y verReporteAction(). 
+6.4 Repositorios o Data Mappers (opcional) 
+Para una capa de acceso a datos más desacoplada, implementar patrones Repository o Data 
+Mapper que envuelvan los modelos. 
+7. Despliegue - Configurar entorno de pruebas y producción. - Realizar pull de la rama main y migraciones de base de datos. - Limpiar cache y ejecutar pruebas de humo tras despliegue. 
+8. Pruebas 
+Pruebas Unitarias: Configurar PHPUnit para validar métodos de modelos y lógica de 
+negocio. 
+Pruebas de Integración: Asegurar el funcionamiento conjunto de controladores, modelos y 
+vistas. 
+9. Control de Versiones - Usar Git con repositorio en GitHub/GitLab. - Ramas: main, develop, feature/*. - Pull requests con revisión de al menos un par de desarrolladores. 
+10. Mantenimiento y Solución de Problemas - Registrar incidencias en un sistema de seguimiento (Jira, GitHub Issues). - Revisar logs en /logs para errores de PHP y base de datos. - Documentar actualizaciones en CHANGELOG.md siguiendo Keep a Changelog.

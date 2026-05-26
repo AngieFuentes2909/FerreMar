@@ -1,0 +1,91 @@
+MANUAL DE USUARIO  
+FERRETERIA 
+FERREMAR 
+1. Introducción 
+Este manual está diseñado para guiar a los usuarios en el uso eficiente del sistema de 
+inventario, cubriendo las funcionalidades disponibles para los perfiles de Administrador, 
+Bodeguero y Vendedor/Cajero. 
+2. Acceso al Sistema 
+• Inicio de sesión: Ingrese su nombre de usuario y contraseña proporcionados 
+por el administrador. 
+• Recuperación de contraseña: Si olvida su contraseña, comuníquese con el 
+administrador para restablecerla. 
+• Cierre de sesión: Haga clic en el botón “Cerrar sesión” ubicado en la esquina 
+superior derecha de la pantalla. 
+3. Roles de Usuario 
+3.1 Administrador 
+El administrador tiene acceso completo al sistema, incluyendo la gestión de productos, 
+categorías, usuarios y la visualización de reportes. 
+3.2 Bodeguero 
+El bodeguero es responsable de la gestión física del inventario, incluyendo la recepción de 
+mercancía, ajustes de inventario. 
+3.3 Vendedor/Cajero 
+El vendedor/cajero puede realizar ventas, consultar el inventario y registrar clientes. 
+4. Funcionalidades del Administrador 
+4.1 Gestión de Productos 
+• Agregar producto: Navegue a “Productos” > “Nuevo producto” y complete 
+los campos requeridos. 
+• Editar producto: En la lista de productos, haga clic en “Editar” (botón verde 
+con un círculo ) junto al producto deseado. 
+• Eliminar producto: En la lista de productos, haga clic en “Eliminar” (botono 
+rojo) junto al producto deseado. 
+4.2 Gestión de Categorías 
+• Agregar categoría: Navegue a “Categorías” > “Agregar nueva” y complete 
+los campos requeridos. 
+• Editar categoría: En la lista de categorías, haga clic en “Editar” junto a la 
+categoría deseada. 
+• Eliminar categoría: En la lista de categorías, haga clic en “Eliminar” junto a 
+la categoría deseada. 
+4.3 Gestión de Usuarios 
+• Agregar usuario: Navegue a “Usuarios” > “Agregar nuevo” y complete los 
+campos requeridos. 
+• Editar usuario: En la lista de usuarios, haga clic en “Editar” junto al usuario 
+deseado. 
+• Eliminar usuario: En la lista de usuarios, haga clic en “Eliminar” junto al 
+usuario deseado. 
+4.4 Reportes  
+• Generar reportes: Navegue a “Configuración” “Reportes” y seleccione el 
+tipo de reporte que desea generar (ventas, productos, ganancias). 
+• Exportar datos: En la sección de reportes, haga clic en “descargar” para 
+descargar los datos en formato PDF. 
+5. Funcionalidades del Bodeguero 
+5.1 Recepción de Mercancía 
+• Registrar entrada de productos: Navegue a “Producto” > “Nuevo producto” 
+y complete los campos requeridos para registrar la entrada de nuevos productos al 
+inventario. 
+523 Consultar Inventario 
+• Ver inventario: Navegue a “Producto” > “Lista de producto” para consultar 
+el estado actual del inventario. 
+6. Funcionalidades del Vendedor/Cajero 
+6.1 Procesar Ventas 
+• Registrar venta: Navegue a “Ventas” > “Nueva venta”, seleccione los 
+productos y cantidades, y haga clic en “Guardar”. 
+• Emitir recibos: Después de guardar la venta, haga clic en “Imprimir recibo” 
+para generar el comprobante. 
+6.2 Consultar Inventario 
+• Buscar productos: Utilice la barra de búsqueda en la sección de “Productos” 
+para localizar un producto específico. 
+• Ver detalles de productos: Haga clic en el nombre del producto para ver 
+información detallada. 
+7. Buenas Prácticas y Recomendaciones 
+• Seguridad: No comparta sus credenciales de acceso y cierre sesión al 
+finalizar su turno. 
+• Mantenimiento: Realice respaldos periódicos de la base de datos para 
+evitar pérdida de información. 
+• Soporte: En caso de problemas técnicos, comuníquese con el administrador 
+del sistema. 
+8. Preguntas Frecuentes (FAQ) 
+P: ¿Cómo puedo recuperar mi contraseña? 
+R: Comuníquese con el administrador del sistema para que le proporcione una nueva 
+contraseña. 
+P: ¿Puedo editar una venta después de guardarla? 
+R: No, por razones de integridad de datos, las ventas no pueden ser editadas una vez 
+guardadas. Si necesita corregir una venta, deberá anularla y registrar una nueva. 
+9. Glosario 
+• Inventario: Conjunto de productos disponibles en la ferretería. 
+• Categoría: Clasificación de productos según su tipo o uso. 
+• Producto: Donde se visualiza los productos. 
+• Caja: Registro  de ventas de cada vendedor y movimientos de efectivo. 
+10. Anexos 
+• Capturas de pantalla: [Incluir imágenes de las interfaces del sistema] 
+• Diagramas: [Incluir diagramas de flujo o arquitectura del sistema]

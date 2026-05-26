@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+
+/*=====================================================
+    Diseño del Sistema Premium (Variables)
+=====================================================*/
+:root {
+    --primary-gradient: linear-gradient(135deg, #f97316 0%, #ff5e36 100%);
+    --primary: #f97316;
+    --primary-hover: #ea6c0a;
+    --primary-light: rgba(249, 115, 22, 0.08);
+    --bg-main: #f8fafc;
+    --bg-card: #ffffff;
+    --border-color: #e2e8f0;
+    --text-main: #0f172a;
+    --text-muted: #64748b;
+    --sidebar-bg: #ffffff;
+    --sidebar-active-bg: rgba(249, 115, 22, 0.12);
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.02);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
+    --shadow-lg: 0 10px 25px -5px rgba(15, 23, 42, 0.05), 0 8px 10px -6px rgba(15, 23, 42, 0.05);
+    --shadow-premium: 0 20px 40px -15px rgba(15, 23, 42, 0.07);
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*=====================================================
+    Reset base y tipografía
+=====================================================*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, .title, .subtitle, .tittles {
+    font-family: "Outfit", sans-serif !important;
+    font-weight: 700 !important;
+    color: var(--text-main) !important;
+}
+
+.subtitle {
+    font-weight: 500 !important;
+    color: var(--text-muted) !important;
+}
+
+/*=====================================================
+    Layout principal
+=====================================================*/
+.page-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: column;
+}
+.page-body {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+.pageContent {
+    flex: 1;
+    overflow-y: auto;
+    background-color: var(--bg-main);
+    transition: all 0.3s ease;
+}
+
+/*=====================================================
+    Navbar (Superior) - Rediseño Premium
+=====================================================*/
+.navbar-pro {
+    background: var(--sidebar-bg) !important;
+    border-bottom: 1px solid var(--border-color) !important;
+    box-shadow: var(--shadow-sm) !important;
+    height: 52px !important;
+}
+.navbar-brand {
+    font-family: "Outfit", sans-serif !important;
+    font-weight: 800 !important;
+    font-size: 16px !important;
+    letter-spacing: 0.5px !important;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.navbar-menu-btn:hover, .notif-btn:hover, .navbar-user:hover {
+    background: rgba(15, 23, 42, 0.04) !important;
+}
+
+/*=====================================================
+    Sidebar (Menú Lateral) - Rediseño Premium
+=====================================================*/
+.sidebar-pro {
+    background: var(--sidebar-bg) !important;
+    border-right: 1px solid var(--border-color) !important;
+}
+.sidebar-profile {
+    border-bottom: 1px solid var(--border-color) !important;
+    padding: 22px 18px !important;
+}
+.sidebar-profile-name {
+    color: var(--text-main) !important;
+}
+.sidebar-profile-role {
+    color: var(--primary) !important;
+}
+.sidebar-profile-img {
+    border: 2px solid var(--primary) !important;
+    box-shadow: 0 0 10px rgba(249, 115, 22, 0.15);
+}
+.sidebar-section-label {
+    color: var(--text-muted) !important;
+    opacity: 0.65;
+    font-weight: 700 !important;
+    font-size: 9px !important;
+}
+.sidebar-item {
+    margin: 2px 12px !important;
+    border-radius: 8px !important;
+    border-left: none !important;
+    color: #475569 !important;
+    font-weight: 500 !important;
+    padding: 10px 14px !important;
+    transition: var(--transition-fast) !important;
+}
+.sidebar-item:hover {
+    background: rgba(15, 23, 42, 0.04) !important;
+    color: var(--text-main) !important;
+}
+.sidebar-item.active {
+    background: var(--primary-gradient) !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 12px -2px rgba(249, 115, 22, 0.3) !important;
+}
+.sidebar-submenu {
+    background: #f8fafc !important;
+}
+.sidebar-submenu a {
+    margin: 2px 12px 2px 22px !important;
+    border-radius: 6px !important;
+    padding: 8px 14px 8px 38px !important;
+    color: #64748b !important;
+    font-weight: 500 !important;
+    transition: var(--transition-fast) !important;
+}
+.sidebar-submenu a:hover {
+    color: var(--text-main) !important;
+    background: rgba(15, 23, 42, 0.03) !important;
+}
+.sidebar-logout a {
+    color: #64748b !important;
+}
+.sidebar-logout a:hover {
+    background: #fee2e2 !important;
+    color: #ef4444 !important;
+}
+
+/*=====================================================
+    KPIs y Acciones en Dashboard
+=====================================================*/
+.kpi-card {
+    background: var(--bg-card) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: var(--radius-md) !important;
+    box-shadow: var(--shadow-sm) !important;
+    transition: var(--transition-normal) !important;
+}
+.kpi-card:hover {
+    box-shadow: var(--shadow-premium) !important;
+    transform: translateY(-4px) !important;
+    border-color: rgba(249, 115, 22, 0.2) !important;
+}
+.kpi-value {
+    font-family: "Outfit", sans-serif !important;
+    font-weight: 800 !important;
+    color: var(--text-main) !important;
+}
+.quick-btn {
+    background: var(--bg-card) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: var(--radius-md) !important;
+    box-shadow: var(--shadow-sm) !important;
+    transition: var(--transition-normal) !important;
+}
+.quick-btn:hover {
+    background: #fffaf7 !important;
+    border-color: var(--primary) !important;
+    color: var(--primary) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: var(--shadow-md) !important;
+}
+
+/*=====================================================
+    Tablas modernas (SaaS)
+=====================================================*/
+.table-container {
+    background: white;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+    padding: 8px;
+    margin-bottom: 24px;
+}
+.table {
+    width: 100% !important;
+    background-color: transparent !important;
+    font-size: 13px !important;
+}
+.table thead th {
+    background: #fafafb !important;
+    color: var(--text-muted) !important;
+    font-weight: 600 !important;
+    font-size: 11px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    padding: 14px 16px !important;
+    border-bottom: 2px solid var(--border-color) !important;
+}
+.table tbody td {
+    padding: 14px 16px !important;
+    color: #334155 !important;
+    border-bottom: 1px solid var(--border-color) !important;
+    vertical-align: middle !important;
+}
+.table tbody tr:hover td {
+    background-color: #f8fafc !important;
+}
+.table-pro {
+    border-radius: var(--radius-md) !important;
+    box-shadow: var(--shadow-md) !important;
+}
+
+/*=====================================================
+    Botones premium
+=====================================================*/
+.button {
+    font-family: "Inter", sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    height: 38px !important;
+    border-radius: 8px !important;
+    transition: var(--transition-fast) !important;
+    box-shadow: var(--shadow-sm) !important;
+}
+.button.is-link {
+    background: var(--primary-gradient) !important;
+    border: none !important;
+    color: white !important;
+}
+.button.is-link:hover {
+    box-shadow: 0 4px 14px rgba(249, 115, 22, 0.35) !important;
+    filter: brightness(1.05);
+}
+.button.is-success {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+    border: none !important;
+}
+.button.is-success:hover {
+    box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35) !important;
+    filter: brightness(1.05);
+}
+.button.is-danger {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%) !important;
+    border: none !important;
+}
+.button.is-danger:hover {
+    box-shadow: 0 4px 14px rgba(239, 68, 68, 0.35) !important;
+    filter: brightness(1.05);
+}
+.button.is-info {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important;
+    border: none !important;
+}
+.button.is-info:hover {
+    box-shadow: 0 4px 14px rgba(59, 130, 246, 0.35) !important;
+    filter: brightness(1.05);
+}
+
+/*=====================================================
+    Formularios modernos
+=====================================================*/
+.box, .form-pro {
+    background: var(--bg-card) !important;
+    border-radius: var(--radius-lg) !important;
+    border: 1px solid var(--border-color) !important;
+    box-shadow: var(--shadow-lg) !important;
+    padding: 28px !important;
+}
+.label, label {
+    font-weight: 600 !important;
+    font-size: 12px !important;
+    color: #475569 !important;
+    margin-bottom: 6px !important;
+}
+.input, .select select, .textarea {
+    background-color: #f8fafc !important;
+    border: 1.5px solid #e2e8f0 !important;
+    border-radius: 8px !important;
+    height: 38px !important;
+    font-size: 13px !important;
+    transition: var(--transition-fast) !important;
+    box-shadow: none !important;
+    outline: none !important;
+    color: var(--text-main) !important;
+}
+.input:focus, .select select:focus, .textarea:focus {
+    border-color: var(--primary) !important;
+    box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.12) !important;
+    background-color: white !important;
+}
+
+/*=====================================================
+    Utilidades y Scrollbar
+=====================================================*/
+.scroll::-webkit-scrollbar { width: 6px; }
+.scroll::-webkit-scrollbar-thumb { background: rgba(148, 163, 184, 0.4); border-radius: 3px; }
+.scroll::-webkit-scrollbar-track { background: transparent; }
+
+.badge-pro {
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+}
+.badge-success { background: #d1fae5; color: #065f46; }
+.badge-warning { background: #fef3c7; color: #92400e; }
+.badge-danger  { background: #fee2e2; color: #991b1b; }
+.badge-info    { background: #dbeafe; color: #1e40af; }
+
+.page-header-title {
+    font-size: 22px !important;
+    font-weight: 800 !important;
+}
+.page-header-sub {
+    font-size: 13px !important;
+    color: var(--text-muted) !important;
+}

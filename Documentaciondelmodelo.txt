@@ -1,0 +1,26 @@
+Documentación del Modelo de 
+Desarrollo de Software - Incremental 
+1. Introducción al Modelo Incremental 
+El modelo de desarrollo incremental divide el proyecto en varios incrementos o versiones, 
+cada uno entregable y funcional. Permite la retroalimentación temprana del cliente y ajustes 
+continuos, reduciendo riesgos y mejorando la calidad del producto. 
+2. Aplicación del Modelo en el Proyecto 
+2.1 Primer Incremento: Módulo de Categorías y Productos - Objetivo: Desarrollar la gestión de categorías y productos. - Actividades: Análisis de requisitos, diseño de la base de datos, desarrollo de interfaces, 
+pruebas unitarias. - Entregables: Documentos de requisitos, diagramas de entidad-relación, código PHP del 
+módulo, informe de pruebas. 
+2.2 Segundo Incremento: Módulo de Clientes y Ventas - Objetivo: Implementar el registro y gestión de clientes, así como la funcionalidad de 
+ventas. - Actividades: Diseño de pantallas de venta, desarrollo de lógica de negocio, integración con 
+la base de datos, pruebas de integración. - Entregables: Prototipos de interfaz, código PHP del módulo de ventas, scripts de prueba y 
+resultados. 
+2.3 Tercer Incremento: Módulo de Caja y Reportes - Objetivo: Añadir la gestion de caja y la generación de reportes de ventas e inventario. - Actividades: Desarrollo de logica de caja, creación de consultas SQL para reportes, diseño 
+de plantillas de reporte, pruebas de aceptación. - Entregables: Código PHP del módulo de caja, plantillas de reportes, documentos de 
+validación con el usuario. 
+2.4 Cuarto Incremento: Módulo de Bodega - Objetivo: Implementar la recepción de mercancía, ajustes de inventario y transferencias 
+entre bodegas. - Actividades: Diseño de flujos de entrada y salida de productos, programación de ajustes de 
+stock, pruebas funcionales. 
+3. Evidencia de la Aplicación del Modelo Incremental - Reuniones de planificación al inicio de cada incremento con minutas. - Revisiones y demostraciones de cada incremento con el cliente final. - Documentación de requisitos y diseños aprobados en cada fase. 
+4. Conclusiones y Recomendaciones 
+El modelo incremental permitió entregar funcionalidades críticas de forma temprana, 
+obtener retroalimentación continua y ajustar el desarrollo según las necesidades del cliente. 
+Se recomienda mantener prácticas de revisiones periódicas y pruebas automatizadas para 
+futuros proyectos.
