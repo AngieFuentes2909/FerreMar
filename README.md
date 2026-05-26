@@ -113,7 +113,7 @@ El código sigue una arquitectura **Modelo-Vista-Controlador (MVC)** ordenada y 
 
 ## 👥 Integrantes del Proyecto
 
-El desarrollo y optimización del sistema **FerreMar** fue realizado con pasión por el siguiente equipo de trabajo:
+El desarrollo y optimización del sistema **FerreMar** fue realizado por el siguiente equipo de trabajo:
 
 *   👩‍💻 **Angie Fuentes**
 *   👩‍💻 **Daniela Heredia**
